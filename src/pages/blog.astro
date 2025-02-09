@@ -1,15 +1,15 @@
 ---
+import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-  <a href="/">Inicio</a>
-  <a href="/about/">Sobre mi</a>
-  <a href="/blog/">Blog</a>
-
+<Layout title="Blog">
+  <Header />
   <h1>Mi blog de Astro aprendizaje</h1>
   <p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
 
@@ -18,4 +18,5 @@ import Layout from "../layouts/Layout.astro";
     <li><a href="/posts/post-2/">Publicación 2</a></li>
     <li><a href="/posts/post-3/">Publicación 3</a></li>
   </ul>
+  <Footer />
 </Layout>
